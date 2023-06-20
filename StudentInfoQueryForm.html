@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Student Information</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    </head>
+    <body>
+        <h1> Display Information </h1>
+        <form action = "StudentInfoQueryProcess.php" method = "post">    
+            <label for = "studentID"> Search By Student ID: </label>
+                <input type = "text" id = "ID" name = "studentID">
+                <br/>
+            <label>OR</label>
+            <br/><br/>
+            <label for = "class"> Search by classification:</label>
+                <select id = "class" name = "class"> 
+                    <option value = "" selected></option>
+                    <option value = "Freshman">Freshman</option>
+                    <option value = "Sophomore">Sophomore</option>
+                    <option value = "Junior">Junior</option>
+                    <option value = "Senior">Senior</option>
+                    <option value = "5th Year Senior">5th Year Senior</option>
+                    <option value = "Multi-Year Senior">Multi-Year Senior</option>
+                </select>
+                <br/>
+            <label>OR</label>
+            <br/><br/>
+            <label for = "major"> Search by Major: </label>
+                <input type = "text" id = "major" name = "major">
+                <br/>
+            <label>OR</label>
+            <br/><br/>
+            <label for = "showAll"> Show all Entries?</label>
+            <br/>
+            <label>
+                <input type = "radio" id = "showAll" name = "response" value = 0 checked> No </input>
+                <br/>
+            </label>
+            <label>
+                <input type = "radio" id = "showAll" name = "response" value = 1> Yes </input>
+                <br/>
+            </label>
+            <br/><br/>
+            <input type = "submit" value = "Submit Query">
+        </form>
+    </body>
+</html>

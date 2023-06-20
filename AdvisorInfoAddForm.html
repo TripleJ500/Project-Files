@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advisor Information</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    </head>
+    <body>
+        <h1>Advisor Information</h1>
+        <form action = "AdvisorInfoAddProcess.php" method = "post">
+            <label for = "advisorID"> Advisor's ID Number: </label>
+                <input type = "text" id = "advisorID" name = "ID">
+            <label for = "advisorFirstName"> Advisor's First Name: </label>
+                <input type = "text" id = "advisorFirstName" name = "firstName">
+            <label for = "advisorLastName"> Advisor's Last Name: </label>
+                <input type = "text" id = "advisorLastName" name = "lastName">
+            <label for = "advisorInit"> Advisor's Initials: </label>
+                <input type = "text" id = "advisorInit" name = "initials">
+            <label for = "jobTitle"> Advisor's Job Title: </label>
+                <input type = "text" id = "jobTitle" name = "jobTitle">
+            <label for = "department"> Advisor's Department: </label>
+                <input type = "text" id = "department" name = "department">
+            <input type = "submit" name = "submit" value = "Submit Information"> 
+        </form>
+    </body>
+</html>

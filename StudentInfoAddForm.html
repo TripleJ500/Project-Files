@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Information</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    </head>
+    <body>
+        <h1>Student Information</h1>
+        <form action = "StudentInfoAddProcess.php" method = "post">
+            <label for = "studentID"> Student ID Number: </label>
+                <input type = "text" id = "studentID" name = "studentID">
+            <label for = "studentFirstName"> Student First Name: </label>
+                <input type = "text" id = "studentFirstName" name = "firstName">
+            <label for = "studentLastName"> Student Last Name: </label>
+                <input type = "text" id = "studentLastName" name = "lastName">
+            <label for = "studentInit"> Student Initials: </label>
+                <input type = "text" id = "studentInit" name = "initials">
+            <label for = "studentMajor"> Student's Major: </label>
+                <input type = "text" id = "studentMajor" name = "major">
+            <label for = "studentClass"> Student's Classification: </label>
+                <select id = "studentClass" name = "class"> 
+                    <option value = "" selected></option>
+                    <option value = "Freshman">Freshman</option>
+                    <option value = "Sophomore">Sophomore</option>
+                    <option value = "Junior">Junior</option>
+                    <option value = "Senior">Senior</option>
+                    <option value = "5th Year Senior">5th Year Senior</option>
+                    <option value = "Multi-Year Senior">Multi-Year Senior</option>
+                </select>
+            <label for = "advisorID"> Advisor ID: </label>
+                <input type = "text" id = "advisorID" name = "advisorID">
+                <br/>
+            <input type = "submit" name = "submit" value = "Submit Information"> 
+        </form>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Delete Advisor Information</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    </head>
+    <body>
+        <h1>Delete Advisor Information</h1>
+        <form action = "AdvisorInfoDeleteVerify.php" method = "post">
+            <label for = "advisorID"> Advisor's ID Number: </label>
+                <input type = "text" id = "advisorID" name = "advisorID">
+            <label>OR</label>
+            <br><br>
+            <label for = "deleteAll">Delete All Records From This Table?</label>
+            <br>
+                <label>
+                    <input type = "radio" id = "deleteAll" name = "response" value = 0 checked> No </input>
+                    <br/>
+                </label>
+                <label>
+                    <input type = "radio" id = "deleteAll" name = "response" value = 1> Yes </input>
+                    <br/>
+                </label>
+            <br/><br/>
+            <input type = "submit" name = "submit" value = "Submit Information"> 
+        </form>
+    </body>
+</html>

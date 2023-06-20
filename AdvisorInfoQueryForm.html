@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Advisor Information</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    </head>
+    <body>
+        <h1> Display Information </h1>
+        <form action = "AdvisorInfoQueryProcess.php" method = "post">    
+            <label for = "advisorID"> Enter Advisor ID: </label>
+                <input type = "text" id = "ID" name = "advisorID">
+                <br/>
+            <label>OR</label>
+            <br/><br/>
+            <label for = "showAll"> Show all Entries?</label>
+            <br/>
+            <label>
+                <input type = "radio" id = "showAll" name = "response" value = 0 checked> No </input>
+                <br/>
+            </label>
+            <label>
+                <input type = "radio" id = "showAll" name = "response" value = 1> Yes </input>
+                <br/>
+            </label>
+            <br/><br/>
+            <input type = "submit" value = "Submit Query">
+        </form>
+    </body>
+</html>

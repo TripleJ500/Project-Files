@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Course Information</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    </head>
+    <body>
+        <h1>Course Information</h1>
+        <form action = "CourseInfoAddProcess.php" method = "post">
+            <label for = "coursePrefix"> Course Prefix: </label>
+                <input type = "text" id = "coursePrefix" name = "coursePrefix">
+            <label for = "courseName"> Course Name: </label>
+                <input type = "text" id = "courseName" name = "courseName">
+            <label for = "creditHours"> Credit Hours: </label>
+                <select id = "creditHours" name = "creditHours"> 
+                    <option value = "0" selected></option>
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                    <option value = "6">6</option>
+                </select>
+            <input type = "submit" name = "submit" value = "Submit Information"> 
+        </form>
+    </body>
+</html>

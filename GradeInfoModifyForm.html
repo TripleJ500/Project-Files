@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modify Grade Information</title>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    </head>
+    <body>
+        <h1>Grade Information</h1>
+        <form action = "GradeInfoModifyProcess.php" method = "post">
+            <label for = "gradeID"> Grade ID: </label>
+                <input type = "text" id = "gradeID" name = "gradeID">
+            <br><br>
+            <label>OR</label>
+            <br><br>
+            <label for = "studentID"> Student ID: </label>
+                <input type = "text" id = "studentID" name = "studentID">
+                <br>
+            <label for = "coursePrefix"> Course Name (Prefix): </label>
+                <input type = "text" id = "coursePrefix" name = "coursePrefix">
+            <input type = "submit" name = "submit" value = "Submit Information"> 
+        </form>
+    </body>
+</html>
